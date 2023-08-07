@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client side validating</title>
+</head>
+
+<body>
+    <!---requiring users to submit--->
+    <form>
+        <label for="allergies">Do you have any dietary restrictions?</label>
+        <!---creates a text box that requires input--->
+        <input id="allergies" name="allergies" type="text" required>
+        <!---this creates the submit icon--->
+        <input type="submit" value="Submit">
+    </form>
+    <!---requiring users to enter a # within a range--->
+    <br />
+    <form>
+        <label for="age">Age:</label>
+        <!---min and max attributes--->
+        <input id="age" name="age" type="number" min="18" max="100">
+        <input type="submit" value="Submit">
+        <br>
+        <label for="name">Name:</label>
+        <!---minlength and maxlength attributes--->
+        <input id="name" name="name" type="text" minlength="1" maxlength="50" required>
+        <input type="submit" value="Submit">
+    </form>
+    <!---matching a pattern--->
+    <br />
+    <form>
+        <label for="payment">Credit Card Number:</label>
+
+        <!---require value that is 14 long with maxs being 16 long. only accepting numbers from [0 - 9]--->
+        <!---using "[a-zA-Z0-9]+" lets us limit to just numbers and text not including characters such as '@'--->
+        <input id="payment" name="payment" type="text" required pattern="[0-9]{14,16}">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
