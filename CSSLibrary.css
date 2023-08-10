@@ -1,3 +1,10 @@
+/* linking html file to css file */
+<head>
+  <title>Vacation World</title>
+  <link href='style.css' rel='stylesheet'>
+</head>
+
+/* '*'= allows us to manipulate everything in the html document */
 * {
   border: 1px solid red;
 }
@@ -10,7 +17,7 @@ h1 {
   color: maroon;
 }
 
-<!---class--->
+/* class */
 .title {
   color: teal;
 }
@@ -19,12 +26,12 @@ h1 {
   text-transform: uppercase;
 }
 
-<!---id--->
+/* id */
 #article-title {
   font-family: cursive;
 }
 
-<!---type[attribute*=value]--->
+/* type[attribute*=value] */
 a[href*='florence'] {
   color: lightgreen;
 }
