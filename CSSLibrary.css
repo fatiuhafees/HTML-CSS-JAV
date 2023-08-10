@@ -1,0 +1,36 @@
+* {
+  border: 1px solid red;
+}
+
+p {
+  color: green;
+}
+
+h1 {
+  color: maroon;
+}
+
+<!---class--->
+.title {
+  color: teal;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+<!---id--->
+#article-title {
+  font-family: cursive;
+}
+
+<!---type[attribute*=value]--->
+a[href*='florence'] {
+  color: lightgreen;
+}
+a[href*='beijing']{
+  color: lightblue;
+}
+a[href*='seoul']{
+  color: lightpink;
+}
