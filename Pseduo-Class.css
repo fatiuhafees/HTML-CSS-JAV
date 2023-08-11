@@ -1,0 +1,9 @@
+
+/*pseduo-classes, allow us to give special characteristics to elements*/
+/*initializing pseduo-class
+format: 'element: name {}' */
+/*Example: */ 
+p:hover {
+  background-color: lime; /*when ever you hover over any paragraphs its background will turn lime green*/
+}
+ 
