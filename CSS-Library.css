@@ -17,7 +17,7 @@ h1 {
   color: maroon;
 }
 
-/* class */
+/* Css class, ment to be used offten (gives common style) */
 .title {
   color: teal;
 }
@@ -26,12 +26,12 @@ h1 {
   text-transform: uppercase;
 }
 
-/* id */
+/* Css id, not ment to be used offten as they override class and type (gives unique style)*/
 #article-title {
   font-family: cursive;
 }
 
-/* type[attribute*=value] */
+/* Css type, format: 'type[attribute*=value]' */
 a[href*='florence'] {
   color: lightgreen;
 }
@@ -43,3 +43,11 @@ a[href*='seoul']{
   color: lightpink;
 }
 
+
+/* Pseduo-Class, allow us to give special characteristics to elements.
+   To initialize Pseduo-Class we use the format 'element: name {}'.
+   Example:*/ 
+p:hover {
+  background-color: lime; /*when ever you hover over any paragraphs its background will turn lime green*/
+}
+ 
