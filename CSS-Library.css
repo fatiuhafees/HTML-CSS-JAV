@@ -3,7 +3,7 @@
   <title>Vacation World</title>
   <link href='style.css' rel='stylesheet'>
 </head>
-
+/****************************************************************************************************************/
 /* '*', allows us to manipulate everything in the html document */
 * {
   border: 1px solid red;
@@ -43,15 +43,30 @@ a[href*='beijing']{
 a[href*='seoul']{
   color: lightpink;
 }
-
-
+/****************************************************************************************************************/
 /* Pseduo-Class, allow us to give special characteristics to elements.
    To initialize Pseduo-Class we use the format 'element: name {}'.
    Example:*/ 
 p:hover {
   background-color: lime; /*when ever you hover over any paragraphs its background will turn lime green*/
 }
+/****************************************************************************************************************/
+/* Chanining, combining multiple selectors (selector = css-id,css-class,type,standard). format: 'element selector'.
+   Example: code below only effects parts of the html document with the element ='h2' and class = 'destination'*/ 
+h2.destination{
+  font-family: Tahoma;
+}
+
+/* desendent combining. format: 'selector element'.
+   Example: 'li' element is nested in <ul> making it a decendent of 'class='main-list''*/ 
+<ul class='main-list'>
+  <li> ... </li>
+</ul>
+
+.main-list li {
  
+}
+/****************************************************************************************************************/
 /* Specificity, the order in which the document decides which css style will be displayed.
    Order is = id --> class --> type --> standard/anything else.
    Example: when looking at the code below we can determine that 'cornflowerblue' is the final outcome 
@@ -67,8 +82,18 @@ h5 {
 #author-id {
   color: cornflowerblue;
 }
+/****************************************************************************************************************/
+/*Multiple selector, removes repetitive code: format:'selector, selector{}'*/
+/*repetitive:*/ h1 {
+  font-family: Georgia;
+}
+.menu {
+  font-family: Georgia;
+}
+/*multiple selector:*/ h1, 
+.menu {
+  font-family: Georgia;
+}
+/****************************************************************************************************************/
 
-
-
-
-
+For syntax follow the link: https://www.codecademy.com/learn/learn-css/modules/syntax-and-selectors/cheatsheet
