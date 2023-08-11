@@ -4,11 +4,12 @@
   <link href='style.css' rel='stylesheet'>
 </head>
 
-/* '*'= allows us to manipulate everything in the html document */
+/* '*', allows us to manipulate everything in the html document */
 * {
   border: 1px solid red;
 }
 
+/*standard Css style. format:'element{}'*/
 p {
   color: green;
 }
@@ -51,3 +52,23 @@ p:hover {
   background-color: lime; /*when ever you hover over any paragraphs its background will turn lime green*/
 }
  
+/* Specificity, the order in which the document decides which css style will be displayed.
+   Order is = id --> class --> type --> standard/anything else.
+   Example: when looking at the code below we can determine that 'cornflowerblue' is the final outcome 
+            based of specificity and that the others style types will be ignored.*/
+h5 {
+  color: yellow;
+}
+ 
+.author-class {
+  color: pink;
+}
+ 
+#author-id {
+  color: cornflowerblue;
+}
+
+
+
+
+
