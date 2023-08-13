@@ -1,0 +1,34 @@
+font-family: 
+-When specifying a font the font must be intalled on user computer of downloaded with the site
+-We can use a web-safe-font to find fonts taht are supported accross all browsers (https://www.cssfontstack.com/)
+
+font-size: px
+-Commanly measured in pixels
+
+font-weight:
+-Controls how bold or thin texts appear
+-Commands: bold = thick ,normal = normal
+
+text-align:
+-Allows us to align text to the right ,left ,center ,justify
+-Justify spaces text aligning them left and right
+
+color: (foreground)
+background-color: 
+-Color sets the color of the text
+-Background-color sets the color of the background of the text 
+
+opacity:
+-Controls the transparency 
+-Measured from 0 - 1 with 1 repersenting 100%
+
+background-image:url( "   " / .file type )
+-Allows us to change the background on an element
+
+!important 
+-overrides any property making a properties the only case the dominator.
+Example: 
+p {
+  color: blue !important;
+}
+--
