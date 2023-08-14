@@ -49,4 +49,8 @@ The example below shows margin being used to seperate paragraphs 20pixels aways 
 }
 -Just like padding we can be specific: margin-top ,margin-right ,margin-bottom ,margin-left 
 -Shorthand margin:   margin: top right bottom left; ~~~> margin: 20px 10px 30px 25px;
- 
+-* using  'margin: 0 auto;' we can center content:
+p{
+  margin: 0 auto;
+}
+**************************************************************************************
