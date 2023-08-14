@@ -1,0 +1,17 @@
+Reactable Hover Icon For Links Algorithm:
+a{
+  text-decoration: none;
+  color: white;
+  background: red;
+  margin: 0 auto;
+  text-align; center;
+  padding: 5px;
+  padding-left: px;
+  border: 1px red solid;
+  border-radius: 0px;
+}
+a:hover{
+  font-size: 20px;
+  border: 1px red solid;
+  color: red;
+  background: white;
