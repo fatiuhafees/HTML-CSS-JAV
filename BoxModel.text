@@ -25,6 +25,7 @@ p {
 Example of 'border: width style color' being used:
 p {
   border: 3px solid coral;
+  border-radius: 50%;
 }
 -width refers to the pixels so px, thick, thin, medium.
 -style refers to the design so solid, dotted.  
@@ -41,4 +42,11 @@ p{
 -We can get specific using either the property padding-top, padding-right, padding-bottom, padding-left.
 -Shorthand padding:   padding: top right bottom left; ~~~> padding: 20px 10px 30px 25px;
 **************************************************************************************
+The example below shows margin being used to seperate paragraphs 20pixels aways from other elements
+ p {
+  border: 1px solid aquamarine;
+  margin: 20px;
+}
+-Just like padding we can be specific: margin-top ,margin-right ,margin-bottom ,margin-left 
+-Shorthand margin:   margin: top right bottom left; ~~~> margin: 20px 10px 30px 25px;
  
