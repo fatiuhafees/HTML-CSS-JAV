@@ -1,0 +1,44 @@
+Box Model is made up of:
+-The width and height of the content area.
+-Padding, the amount of space between the content area and the border.
+-Border, space between margin and paddding. Contains content and padding.
+-Margin, The amount of space between the border and the outside edge of the element. 
+       
+                  margin
+   ______________________________________                                     
+   |              border                |
+   |  ________________________________  |
+   |  |           padding            |  |
+   |  |  __________________________  |  |
+   |  |  |        content         |  |  |
+   |  |  |________________________|  |  |
+   |  |______________________________|  |
+   |____________________________________|                                    
+
+**************************************************************************************
+The example below will contain paragraphs in a box of 80 by 240:
+p {
+  height: 80px;
+  width: 240px;
+}
+**************************************************************************************
+Example of 'border: width style color' being used:
+p {
+  border: 3px solid coral;
+}
+-width refers to the pixels so px, thick, thin, medium.
+-style refers to the design so solid, dotted.  
+-* We can combine width and height with border to control the dimentions of the border.
+-* We can use 'border-radius: 20px' to curve the border.
+-* We can create a border that is a perfect circle by first creating an element with the same width and height, 
+   and then setting the radius equal to half the width of the box, which is 50%.
+**************************************************************************************
+The example below shows padding being used to increase the space between border and content:
+p{
+  border: 3px solid coral;
+  padding: 10px;
+}
+-We can get specific using either the property padding-top, padding-right, padding-bottom, padding-left.
+-Shorthand padding:   padding: top right bottom left; ~~~> padding: 20px 10px 30px 25px;
+**************************************************************************************
+ 
