@@ -31,4 +31,7 @@ Example:
 p {
   color: blue !important;
 }
---
+
+text-decoration:
+-Text-decoration sets the apperance of decorative lines
+-We can use it to get rid of undelines for links: text-decoration: none;
