@@ -1,4 +1,4 @@
-Reactable Hover Icon For Links Algorithm:
+/*Reactable Icon:*/
 a{
   text-decoration: none;
   color: white;
@@ -15,3 +15,11 @@ a:hover{
   border: 1px red solid;
   color: red;
   background: white;
+*************************************
+/*scrolling icon:*/
+ul{
+  height: 6px;
+  overflow: scroll;
+  border-bottom: 2px white solid;
+}
+*************************************
