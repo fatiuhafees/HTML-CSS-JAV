@@ -84,3 +84,10 @@ The example below shows defult stylesheet being used as to create a blank proper
 -This is a common praticse that should be a habit before every project as it sets major properties to 0;.
 **************************************************************************************
 check out the link for more info: https://www.codecademy.com/learn/learn-css/modules/learn-css-box-model/cheatsheet
+
+
+
+Content-box
+-Content-box is the defult model used by browser
+
+
