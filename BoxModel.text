@@ -3,7 +3,7 @@ Box Model is made up of:
 -Padding, the amount of space between the content area and the border.
 -Border, space between margin and paddding. Contains content and padding.
 -Margin, The amount of space between the border and the outside edge of the element. 
-       
+
                   margin
    ______________________________________                                     
    |              border                |
@@ -13,14 +13,21 @@ Box Model is made up of:
    |  |  |        content         |  |  |
    |  |  |________________________|  |  |
    |  |______________________________|  |
-   |____________________________________|                                    
-
+   |____________________________________|
+   
 **************************************************************************************
 The example below will contain paragraphs in a box of 80 by 240:
 p {
   height: 80px;
   width: 240px;
 }
+-*We can use min and max for hight and width to control how browsers will look on different applcations. 
+Example:
+p{
+  min-width: 100px;
+  max-width: 500px;
+}
+-This shows that paragraphs cannot be narrowed bellow 100px or expanded past 500px.
 **************************************************************************************
 Example of 'border: width style color' being used:
 p {
@@ -39,6 +46,7 @@ p{
   border: 3px solid coral;
   padding: 10px;
 }
+-padding adds space inside an element
 -We can get specific using either the property padding-top, padding-right, padding-bottom, padding-left.
 -Shorthand padding:   padding: top right bottom left; ~~~> padding: 20px 10px 30px 25px;
 **************************************************************************************
@@ -47,10 +55,31 @@ The example below shows margin being used to seperate paragraphs 20pixels aways 
   border: 1px solid aquamarine;
   margin: 20px;
 }
+-margin adds space outside an element
 -Just like padding we can be specific: margin-top ,margin-right ,margin-bottom ,margin-left 
 -Shorthand margin:   margin: top right bottom left; ~~~> margin: 20px 10px 30px 25px;
+
 -* using  'margin: 0 auto;' we can center content:
 p{
   margin: 0 auto;
 }
+**************************************************************************************
+overflow:
+-Used to combat the problem of content and elements overflowing eachother
+-Scroll, creates a scroll path when content is not visiable with in the chosen element(body or main).
+-Hidden, hides content that is not visiable with in the chosen element.
+-Visible(defult), overlays content that is not visiable with in the chosen element.
+The example below shows that when the content/element contained in main is bigger than width 300px you are able to 
+scroll horizontally as to view the rest of the content: 
+main{
+  width: 300px;
+  overflow: scroll ; 
+}
+**************************************************************************************
+The example below shows defult stylesheet being used as to create a blank property slate for the browser:
+* {
+  margin: 0;
+  padding: 0;
+}
+-This is a common praticse that should be a habit before every project as it sets major properties to 0;.
 **************************************************************************************
