@@ -1,3 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+ul{
+  margin:  -9px;
+  height: 2px;
+  padding: 20px;
+  overflow: scroll;
+  border-bottom: 1px white solid;
+}
+h2{
+text-decoration: 2px underline;
+   min-width: 400px;
+  max-width: 400px
+  margin: 0 auto;
+  
+}
 #contact{
        text-align: center;
 }
@@ -5,16 +22,18 @@
 body{
   background: lightblue;
   border: 4px solid white;
+  margin :0px;
+
+ 
 }
 main{
   color: white;
   text-align: center;
+  overflow: scroll ; 
 }
-ul{
-  border-bottom: 4px white solid;
-  margin: 0px;
-}
+
 a{
+ 
  text-decoration: none;
  color: white;
  background: lightblue;
@@ -23,14 +42,20 @@ a{
 a:hover{
   color: lightblue;
   background: white;
-  font-size: 20px;
   border: 2px solid white;
 
 }
+audio{
+  max-width: 400px;
+  height:40px
+}
+
 embed{
+
   font-size: contain;
   border: 4px white solid;
   border-radius: 20px;
   height:100px
   margin: 0 auto; 
 }
+  
