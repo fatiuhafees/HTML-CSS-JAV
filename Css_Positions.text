@@ -1,0 +1,33 @@
+position property 
+staric
+-Static is the default attribute of position. 
+********************************************************************************************
+relative
+-Relative lets us postion elements relative from its static position.
+-Does not affect the position of other elements.
+-*For relative to work we have to use property top, bottom, right, or left. 
+ All these propertys allow us to move from top, bottom, right, or left on the document.
+ 
+ THE EXAMPLE below shows how relative can be used to move paragraphys far down to the right: 
+p{
+  position: relative;
+  top: 50px;
+  left: 120px;
+}
+********************************************************************************************
+absulute 
+-Absolute makes an element ignored by other elements acting like its not on the page. 
+********************************************************************************************
+fixed 
+-Fixes an element in a position meaning that the element will move with the browser as the user scrolls.
+-Commonly used for titles, search bars, etc
+
+THE EXAMPLE below shows how we can fix an title in a position of 0 from the top and 0 from the left: 
+title {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+}
+********************************************************************************************
+sticky 
+
